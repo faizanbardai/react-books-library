@@ -8,13 +8,9 @@ class BooksSection extends React.Component {
     state = {}
     render() {
         return (
-            <>
-                <h3>Horror</h3>
-                <Row className="justify-content-center">
-                    {HorrorBooks.map((Book, index) => <SingleBook book = {Book} key={index}/>)};
-                </Row>
-                
-            </>
+            <Row className="justify-content-center">
+                {HorrorBooks.map((Book, index) => <SingleBook book={Book} key={index} />)};
+            </Row>
         )
     }
 }
