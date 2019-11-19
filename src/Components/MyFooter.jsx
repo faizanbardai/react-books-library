@@ -5,7 +5,7 @@ class MyFooter extends React.Component {
     state = {}
     render() {
         return (
-            <Navbar bg="light" fixed="bottom" expand="lg">
+            <Navbar bg="light" fixed="bottom">
                 <Navbar.Brand href="#home">&copy;2019</Navbar.Brand>
                 <Navbar.Toggle />
                 <Navbar.Collapse className="justify-content-end">
