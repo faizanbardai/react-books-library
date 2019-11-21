@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar, Nav } from 'react-bootstrap';
+import { Navbar, Nav, Form, FormControl } from 'react-bootstrap';
 
 class MyNav extends React.Component {
     state = {}
@@ -14,6 +14,9 @@ class MyNav extends React.Component {
                         <Nav.Link href="#">About</Nav.Link>
                         <Nav.Link href="#">Browse</Nav.Link>
                     </Nav>
+                    <Form inline>
+                        <FormControl type="text" placeholder="Search" className="mr-sm-2" onChange={this.props.searchFunc}/>
+                    </Form>
                 </Navbar.Collapse>
             </Navbar>
         )
